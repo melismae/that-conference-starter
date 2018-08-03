@@ -1,5 +1,4 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle, faTimesCircle, faExclamationTriangle, faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import React, { Component } from 'react';
 import { Row, Col } from 'react-flexbox-grid';
