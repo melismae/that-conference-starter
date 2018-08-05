@@ -28,7 +28,7 @@ const InputField = props => {
                 {props.displaySuccess && <IconSuccess />}
             </InputWrapper>
             {props.feedbackMessage && 
-                <FormFieldFeedback variant='warning'>{props.feedbackMessage}</FormFieldFeedback>
+                <FormFieldFeedback variant={props.feedbackType}>{props.feedbackMessage}</FormFieldFeedback>
             }
         </FormGroup>
     )
@@ -38,14 +38,22 @@ InputField.propTypes = {
     label: PropTypes.string,
     placeholder: PropTypes.string,
     feedbackMessage: PropTypes.string,
-    displaySuccess: PropTypes.bool
+    displaySuccess: PropTypes.bool,
+    feedbackType: PropTypes.string
 }
 
 InputField.defaultProps = {
+    /* Label field. If not passed in, no label field appears. */
     label: '',
+    /* input field placeholder */
     placeholder: '',
+    /* Useful for things like error messages */
     feedbackMessage: '',
-    displaySuccess: false
+    /* If true, will show a check mark in the input field */
+    displaySuccess: false,
+    feedbackType: ''
 }
+
+InputField.displayName = 'InputField'
 
 export { InputField };

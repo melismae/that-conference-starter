@@ -31,4 +31,6 @@ Button.defaultProps = {
     rounded: false
 }
 
+Button.displayName = 'Button'
+
 export { Button };
