@@ -6,4 +6,5 @@ const FormGroup = styled.div`
     flex-direction: column;
 `
 
+/** @component */
 export { FormGroup }

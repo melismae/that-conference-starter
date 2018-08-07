@@ -56,4 +56,5 @@ InputField.defaultProps = {
 
 InputField.displayName = 'InputField'
 
+/** @component */
 export { InputField };

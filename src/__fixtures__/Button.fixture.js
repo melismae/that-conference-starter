@@ -1,4 +1,4 @@
-import { Button } from '../components/Molecules/Button';
+import Button from '../components/Molecules/Button';
 
 export default [
     {

@@ -15,8 +15,3 @@ To start storybook, run `npm run storybook`. Storybook will run in port 9009.
 To start Cosmos, run `npm run cosmos`. Cosmos will run in port 8989.
 
 To start Styleguidist, with an `npx` supported version of Node, run `npx styleguidist server`.
-
-
-
-
-
