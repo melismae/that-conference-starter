@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { textColors, textWeights, textSizes } from '../../styles/theme';
+import { textColors, textSizes } from '../../styles/theme';
 
 const Label = styled.label`
     margin-bottom: 8px;
