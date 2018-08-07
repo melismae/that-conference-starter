@@ -51,4 +51,3 @@ Button.defaultProps = {
 
 /** @component */
 export default Button;
-

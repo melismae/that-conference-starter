@@ -24,7 +24,7 @@ const InputField = props => {
         <FormGroup>
             {props.label  && <Label>{props.label}</Label>}
             <InputWrapper>
-                <Input placeholder={props.placeholder} />
+                <Input placeholder={props.placeholder} variant={props.feedbackType}/>
                 {props.displaySuccess && <IconSuccess />}
             </InputWrapper>
             {props.feedbackMessage && 
@@ -51,7 +51,7 @@ InputField.defaultProps = {
     feedbackMessage: '',
     /* If true, will show a check mark in the input field */
     displaySuccess: false,
-    feedbackType: ''
+    feedbackType: 'default'
 }
 
 InputField.displayName = 'InputField'

@@ -12,7 +12,7 @@ const Input = styled.input`
     padding: 14px 10px;
     border-radius: 3px;
     background: ${props => inputBackground[props.variant]};
-    border: 1px solid ${props => inputBorder[props.variant]};
+    border: ${props => `1px solid ${inputBorder[props.variant]}`};
     color: ${inputStyles.fontColor};
     
     &:placeholder {
