@@ -24,8 +24,8 @@ const FormFieldFeedbackWrapper = styled.div`
 const FormFieldFeedback = props => {
     return (<FormFieldFeedbackWrapper variant={props.variant}>
         {props.variant && (
-            props.variant === 'warning' && <IconWarning />
-            || props.variant === 'error' && <IconError />
+            (props.variant === 'warning' && <IconWarning />)
+            || (props.variant === 'error' && <IconError />)
         )}
         {props.children}
     </FormFieldFeedbackWrapper>

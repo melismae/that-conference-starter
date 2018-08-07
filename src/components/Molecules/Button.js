@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types'; 
-import React from 'react';
 import styled from 'styled-components';
 
-import { colors, buttonStyles, textSizes, textWeights } from '../../styles/theme';
+import { buttonStyles, textSizes, textWeights } from '../../styles/theme';
 
 const Button = styled.button`
     background-color: ${props => buttonStyles.background[props.variant]};

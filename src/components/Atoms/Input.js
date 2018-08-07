@@ -1,9 +1,6 @@
 import PropTypes from 'prop-types';
-import React from 'react';
 import styled from 'styled-components';
-import { colors, inputStyles } from '../../styles/theme';
-
-import {IconSuccess} from './Icons';
+import { inputStyles } from '../../styles/theme';
 
 const inputBorder = inputStyles.borderColor;
 const inputBackground = inputStyles.background;
