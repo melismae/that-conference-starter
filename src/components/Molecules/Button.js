@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types'; 
-import React from 'react';
+import React, { Fragment, PureComponent } from 'react'
 import styled from 'styled-components';
 
-import { colors, buttonStyles, textSizes, textWeights } from '../../styles/theme';
+import { buttonStyles, textSizes, textWeights } from '../../styles/theme';
 
-const Button = styled.button`
+const StyledButton = styled.button`
     background-color: ${props => buttonStyles.background[props.variant]};
     color: ${props => buttonStyles.fontColor[props.variant]};
     border-radius: ${props => props.rounded ? '25px' : '3px'};
@@ -12,6 +12,7 @@ const Button = styled.button`
     font-weight: ${textWeights.button};
     padding: 15px;
     min-width: 140px;
+    border-color: 
     
     &:focus {
         outline: none;
@@ -21,16 +22,32 @@ const Button = styled.button`
     }
 `
 
-Button.propTypes = {
-    variant: PropTypes.string,
-    rounded: PropTypes.bool
+class Button extends PureComponent {
+    static propTypes = {
+        variant: PropTypes.string,
+        rounded: PropTypes.bool
+    }
+    render() {
+        return (
+        <Fragment>
+            <StyledButton {...this.props} />
+        </Fragment>
+        )
+    }
 }
+// Button.propTypes = {
+//     variant: PropTypes.string,
+//     rounded: PropTypes.bool
+// }
 
 Button.defaultProps = {
+    /* One of default, secondary, warning, or disabled */
     variant: 'default',
+    /* Boolean to determine whether button should be rounded */
     rounded: false
 }
 
-Button.displayName = 'Button'
+// Button.displayName = 'Button'
 
-export { Button };
+/** @component */
+export default Button;

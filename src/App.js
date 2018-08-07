@@ -6,7 +6,7 @@ import { Row, Col } from 'react-flexbox-grid';
 import { baseStyles } from './styles/base';
 import { InputField } from './components/Molecules/InputField';
 import { ContainerWrapper } from './components/Atoms/Layout';
-import { Button } from './components/Molecules/Button';
+import Button from './components/Molecules/Button';
 
 baseStyles;
 library.add(faCheckCircle, faTimesCircle, faExclamationTriangle, faInfoCircle);
@@ -19,7 +19,7 @@ class App extends Component {
           <Row>
               <Col xs={4}>
                 <InputField placeholder="Text placeholder" displaySuccess/>
-                <InputField label="Test Label" feedbackMessage="My error" />
+                <InputField label="Test Label" feedbackMessage="My error" feedbackType="error"/>
                 <Button>Button</Button>
                 <Button rounded>Button</Button>
               </Col>

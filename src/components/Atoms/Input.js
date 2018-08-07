@@ -1,9 +1,6 @@
 import PropTypes from 'prop-types';
-import React from 'react';
 import styled from 'styled-components';
-import { colors, inputStyles } from '../../styles/theme';
-
-import {IconSuccess} from './Icons';
+import { inputStyles } from '../../styles/theme';
 
 const inputBorder = inputStyles.borderColor;
 const inputBackground = inputStyles.background;
@@ -15,7 +12,7 @@ const Input = styled.input`
     padding: 14px 10px;
     border-radius: 3px;
     background: ${props => inputBackground[props.variant]};
-    border: 1px solid ${props => inputBorder[props.variant]};
+    border: ${props => `1px solid ${inputBorder[props.variant]}`};
     color: ${inputStyles.fontColor};
     
     &:placeholder {
