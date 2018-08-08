@@ -1,6 +1,6 @@
 # THAT Conference Demo App
 
-This code accompanies "Breaking Up To Make Up: The UI Component Library Journey" presentation for [THAT Conference](https://www.thatconference.com/), August 6-8, 2018.[Presentation can be found here.](https://docs.google.com/presentation/d/1pjzwZC6jQnxb5iSv5uPhEnlWAk97vt_BGT441JEivmU/edit?usp=sharing)
+This code accompanies "Breaking Up To Make Up: The UI Component Library Journey" presentation for [THAT Conference](https://www.thatconference.com/), August 6-8, 2018. The presentation can be found as a pdf in this repo.
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). It uses styled-components and font-awesome icons, and builds out components from [Akash Tyagi's Atomize UI Design System's free sample](https://gumroad.com/l/atomize).
 
@@ -13,7 +13,3 @@ To start the app run `npm start`. If you fork and want to try out other things, 
 To start storybook, run `npm run storybook`. Storybook will run in port 9009.
 
 To start Cosmos, run `npm run cosmos`. Cosmos will run in port 8989.
-
-
-
-
