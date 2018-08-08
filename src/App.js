@@ -22,6 +22,7 @@ class App extends Component {
                 <InputField label="Test Label" feedbackMessage="My error" feedbackType="error"/>
                 <Button>Button</Button>
                 <Button rounded>Button</Button>
+                <Button variant="secondary" rounded>Button</Button>
               </Col>
           </Row>          
         </ContainerWrapper>
