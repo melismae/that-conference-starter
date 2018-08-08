@@ -19,15 +19,8 @@ const Body = (storyFn) => (
 storiesOf('Button', module)
   .add(
     'with text', 
-    withInfo(`
-      description or documentation about my component, supports markdown
-    
-      ~~~js
-      <Button>Click Here</Button>
-      ~~~
-    
-    `)
-    (() => <Button onClick={action('clicked')}>Hello Button</Button>
+    withInfo(`To use when triggering an action on a page`)
+    (() => <Button>Hello Button</Button>
   ))
   .add('rounded', () => <Button rounded onClick={action('clicked')}>Hello Button</Button>);
 

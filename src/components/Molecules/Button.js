@@ -24,9 +24,12 @@ const StyledButton = styled.button`
 
 class Button extends PureComponent {
     static propTypes = {
+        /* One of default, secondary, warning, or disabled */
         variant: PropTypes.string,
+        /* Boolean to determine whether button should be rounded */
         rounded: PropTypes.bool
     }
+
     render() {
         return (
         <Fragment>
@@ -35,19 +38,11 @@ class Button extends PureComponent {
         )
     }
 }
-// Button.propTypes = {
-//     variant: PropTypes.string,
-//     rounded: PropTypes.bool
-// }
 
 Button.defaultProps = {
-    /* One of default, secondary, warning, or disabled */
     variant: 'default',
-    /* Boolean to determine whether button should be rounded */
     rounded: false
 }
-
-// Button.displayName = 'Button'
 
 /** @component */
 export default Button;
