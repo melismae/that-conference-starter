@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { textSizes, functionalColors, colors } from '../../styles/theme'
-import { IconWarning, IconError, IconSuccess } from '../Atoms/Icons'
+import { IconWarning, IconError } from '../Atoms/Icons'
 
 const FormFieldFeedbackWrapper = styled.div`
     display: flex;
@@ -16,7 +16,7 @@ const FormFieldFeedbackWrapper = styled.div`
     color: ${props => functionalColors[props.variant]};
     box-shadow: 0px 5px 5px 0px rgba(236,236,236,1);
 
-    ${IconWarning}, ${IconSuccess} {
+    ${IconWarning}, ${IconError} {
         margin-right: 15px;
     } 
 `;
@@ -24,8 +24,8 @@ const FormFieldFeedbackWrapper = styled.div`
 const FormFieldFeedback = props => {
     return (<FormFieldFeedbackWrapper variant={props.variant}>
         {props.variant && (
-            props.variant === 'warning' && <IconWarning />
-            || props.variant === 'error' && <IconError />
+            (props.variant === 'warning' && <IconWarning />)
+            || (props.variant === 'error' && <IconError />)
         )}
         {props.children}
     </FormFieldFeedbackWrapper>

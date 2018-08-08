@@ -76,7 +76,7 @@ const buttonStyles = {
 
 const inputStyles = {
     borderColor: {
-        default: backgroundGrays.dark,
+        default: backgroundGrays.medium,
         focused: colors.blue,
         error: functionalColors.error,
         success: functionalColors.success,
